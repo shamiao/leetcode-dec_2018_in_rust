@@ -7,6 +7,16 @@
       <sourceFolder url="file://$MODULE_DIR$/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/p2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p2/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p2/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/p2/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/p1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p1/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p1/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/p1/benches" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/p1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/p2/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

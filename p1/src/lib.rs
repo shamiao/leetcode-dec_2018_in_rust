@@ -15,7 +15,17 @@ impl Solution {
     }
 }
 
-pub fn main() {
-    let sol = Solution::two_sum(vec![2, 8, 11, 15], 9);
-    println!("{:?}", sol);
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn example() {
+        let sol = super::Solution::two_sum(vec![2, 7, 11, 15], 9);
+        assert_eq!(sol, vec![0, 1]);
+    }
+
+    #[test]
+    #[should_panic(expected = "no solution found")]
+    fn no_solution() {
+        let _ = super::Solution::two_sum(vec![2, 8, 11, 15], 9);
+    }
 }

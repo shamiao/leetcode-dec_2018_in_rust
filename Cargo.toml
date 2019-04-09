@@ -1,7 +1,6 @@
-[package]
-name = "leetcode-dec_2018_in_rust"
-version = "0.1.0"
-authors = ["shamiao <shamiaoc@gmail.com>"]
-edition = "2018"
+[workspace]
 
-[dependencies]
+members = [
+    "p1",
+    "p2",
+]

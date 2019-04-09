@@ -51,7 +51,7 @@ impl Solution {
             count += Solution::get_and_advance(&mut l2_iter);
             carry = count / 10;
             count %= 10;
-            eprintln!("{}", count);
+            // eprintln!("{}", count);
 
             let append = Box::new(ListNode { val: count, next: None });
             if let Some(x) = sol_last {
@@ -67,34 +67,45 @@ impl Solution {
     }
 }
 
-pub fn main() {
-    let sol = Solution::add_two_numbers(
-        Some(Box::new(ListNode {
-            val: 2,
-            next: Some(Box::new(ListNode {
-                val: 4,
-                next: Some(Box::new(ListNode {
-                    val: 3,
-                    next: Some(Box::new(ListNode {
-                        val: 1,
-                        next: None,
-                    })),
-                })),
-            })),
-        })),
-        Some(Box::new(ListNode {
-            val: 5,
-            next: Some(Box::new(ListNode {
-                val: 6,
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn example() {
+        use super::{Solution, ListNode};
+        let sol = Solution::add_two_numbers(
+            Some(Box::new(ListNode {
+                val: 2,
                 next: Some(Box::new(ListNode {
                     val: 4,
                     next: Some(Box::new(ListNode {
-                        val: 1,
+                        val: 3,
                         next: None,
                     })),
                 })),
             })),
-        })),
-    );
-    println!("{:?}", sol);
+            Some(Box::new(ListNode {
+                val: 5,
+                next: Some(Box::new(ListNode {
+                    val: 6,
+                    next: Some(Box::new(ListNode {
+                        val: 4,
+                        next: None,
+                    })),
+                })),
+            })),
+        );
+        let expected = Some(Box::new(ListNode {
+            val: 7,
+            next: Some(Box::new(ListNode {
+                val: 0,
+                next: Some(Box::new(ListNode {
+                    val: 8,
+                    next: None,
+                })),
+            })),
+        }));
+        println!("{:?}", sol);
+        println!("{:?}", expected);
+        assert_eq!(sol, expected);
+    }
 }
