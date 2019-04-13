@@ -18,9 +18,14 @@
       <sourceFolder url="file://$MODULE_DIR$/p509/examples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/p509/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/p509/benches" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/p70/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p70/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/p70/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/p70/benches" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/p1/target" />
       <excludeFolder url="file://$MODULE_DIR$/p2/target" />
       <excludeFolder url="file://$MODULE_DIR$/p509/target" />
+      <excludeFolder url="file://$MODULE_DIR$/p70/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
